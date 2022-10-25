@@ -1,0 +1,13 @@
+.sidenav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #f9f9f9;
+    max-height: 100%;
+    width: 150px;
+}
+.sidenav a {
+    color: rgb(213, 212, 212);
+    font-weight: 600;
+}

@@ -5,6 +5,7 @@ require 'config/Database.php';
 <html lang="en">
 <head>
     <?php require 'includes/head.php'; ?>
+
 </head>
 <body id="body-pd">
 <header class="header" id="header">
@@ -19,18 +20,47 @@ require 'config/Database.php';
         <div class="row justify-content-center">
             <div class="col-12 col-lg-12">
                 <div class="card box-shadow mx-auto my-2" style="width: 80rem;height: 25rem;border-radius: 25px">
-                    <img src="https://i.imgur.com/hczKIze.jpg" class="user-profile-circle border-dark my-2">
-                    <p class="text-center">Jhone Doe</p>
                     <div class="card-body">
-                        <div class="row justify-content-center mx-auto text-center text-dark">
-                            <div class="col-3">
-                                <a><span><i class="fas fa-birthday-cake"></i></span>  Age</a>
-                            </div>
-                            <div class="col-3">dsdsdsd</div>
-                            <div class="col-3">dsdsdsd</div>
-                            <div class="col-3">dsdsdsd</div>
-                        </div>
+                        <!--begin form choose video upload-->
+                        <main class="col s12">
+                            <!--teste dropzone com preview-->
+                            <div class="row">
+                                <div class="col s12">
+                                    <!-- Uploader Dropzone -->
+                                    <form action="upload.php" id="zdrop" class="fileuploader center-align">
+                                        <div id="upload-label" style="width: 200px;">
+                                            <i class="material-icons">cloud_upload</i>
+                                        </div>
+                                        <span class="tittle">Click the Button or Drop Files Here</span>
+                                    </form>
+
+                                    <!-- Preview collection of uploaded documents -->
+                                    <div class="preview-container">
+                                        <div class="collection card" id="previews">
+                                            <div class="collection-item clearhack valign-wrapper item-template" id="zdrop-template">
+                                                <div class="left pv zdrop-info" data-dz-thumbnail>
+                                                    <div>
+                                                        <span data-dz-name></span> <span data-dz-size></span>
+                                                    </div>
+                                                    <div class="progress">
+                                                        <div class="determinate" style="width:0" data-dz-uploadprogress></div>
+                                                    </div>
+                                                    <div class="dz-error-message"><span data-dz-errormessage></span></div>
+                                                </div>
+
+                                                <div class="secondary-content actions">
+                                                    <a href="#" data-dz-remove class="btn-floating ph red white-text waves-effect waves-light"><i class="material-icons white-text">clear</i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                        </main>
                     </div>
+                </div>
+
+
+            </div>
                 </div>
             </div>
         </div>
@@ -90,7 +120,61 @@ require 'config/Database.php';
 
 </div>
 <!--Container Main end-->
-<script type="text/javascript" rel="script" src="assets/js/bootstrap.min.js"></script>
+
+
 <script type="text/javascript" rel="script" src="assets/js/navbar.js"></script>
+<script type="text/javascript" rel="script" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" rel="script" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.96.1/js/materialize.min.js"></script>
+<script type="text/javascript" rel="script" src="https://cdnjs.cloudflare.com/ajax/libs/dropzone/4.0.1/dropzone.js"></script>
+<!--Dropzone script-->
+<script>
+    $(document).ready(function(){
+
+        initFileUploader("#zdrop");
+        function initFileUploader(target) {
+            var previewNode = document.querySelector("#zdrop-template");
+            previewNode.id = "";
+            var previewTemplate = previewNode.parentNode.innerHTML;
+            previewNode.parentNode.removeChild(previewNode);
+
+
+            var zdrop = new Dropzone(target, {
+                url: 'upload.php',
+                maxFiles:1,
+                maxFilesize:30,
+                previewTemplate: previewTemplate,
+                previewsContainer: "#previews",
+                clickable: "#upload-label"
+            });
+
+            zdrop.on("addedfile", function(file) {
+                $('.preview-container').css('visibility', 'visible');
+            });
+
+            zdrop.on("totaluploadprogress", function (progress) {
+                var progr = document.querySelector(".progress .determinate");
+                if (progr === undefined || progr === null)
+                    return;
+
+                progr.style.width = progress + "%";
+            });
+
+            zdrop.on('dragenter', function () {
+                $('.fileuploader').addClass("active");
+            });
+
+            zdrop.on('dragleave', function () {
+                $('.fileuploader').removeClass("active");
+            });
+
+            zdrop.on('drop', function () {
+                $('.fileuploader').removeClass("active");
+            });
+
+        }
+
+    });
+</script>
+<!--Dropzone script end-->
 </body>
 </html>
