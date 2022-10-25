@@ -33,6 +33,7 @@ h5{
 
 .card{
     border-radius: 25px;
+    border:none;
 
 }
 
@@ -74,4 +75,13 @@ h5{
 
 .second-card-icons:hover{
     box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.7) 0px 18px 36px -18px inset;
+}
+.upload-card{
+    width: 80rem!important;height: 25rem!important;border-radius: 25px;!important;
+}
+
+@media only screen and (max-width: 576px) {
+    .upload-card {
+        width: 20rem !important;
+    }
 }

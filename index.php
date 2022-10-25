@@ -15,13 +15,13 @@ require 'config/Database.php';
 <?php require 'includes/navbar.php'; ?>
 
 <!--Container Main start-->
-<div class="height-100 bg-light">
+<div class="bg-light">
     <div class="container py-5">
         <div class="row justify-content-center">
             <div class="col-12 col-lg-12">
-                <div class="card box-shadow mx-auto my-2" style="width: 80rem;height: 25rem;border-radius: 25px">
+                <div class="card box-shadow mx-auto my-2 upload-card" >
                     <div class="card-body">
-                        <!--begin form choose video upload-->
+                        <!--begin form choose file upload-->
                         <main class="col s12">
                             <!--teste dropzone com preview-->
                             <div class="row">
@@ -58,14 +58,13 @@ require 'config/Database.php';
                         </main>
                     </div>
                 </div>
-
-
-            </div>
-                </div>
             </div>
         </div>
-        <div class="row justify-content-center">
+    </div>
+</div>
 
+
+        <div class="row justify-content-center pb-5">
             <div class="col-12 col-lg-3">
                 <div class="card box-shadow mx-auto my-5" style="width: 18rem;">
                     <img src="https://nsm09.casimages.com/img/2021/06/26//21062602461725998217475200.jpg" class="card-img-top" alt="...">
@@ -116,65 +115,10 @@ require 'config/Database.php';
                 </div>
 
             </div>
-
-
-</div>
+        </div>
 <!--Container Main end-->
 
+<?php require 'includes/footer.php'; ?>
 
-<script type="text/javascript" rel="script" src="assets/js/navbar.js"></script>
-<script type="text/javascript" rel="script" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-<script type="text/javascript" rel="script" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.96.1/js/materialize.min.js"></script>
-<script type="text/javascript" rel="script" src="https://cdnjs.cloudflare.com/ajax/libs/dropzone/4.0.1/dropzone.js"></script>
-<!--Dropzone script-->
-<script>
-    $(document).ready(function(){
-
-        initFileUploader("#zdrop");
-        function initFileUploader(target) {
-            var previewNode = document.querySelector("#zdrop-template");
-            previewNode.id = "";
-            var previewTemplate = previewNode.parentNode.innerHTML;
-            previewNode.parentNode.removeChild(previewNode);
-
-
-            var zdrop = new Dropzone(target, {
-                url: 'upload.php',
-                maxFiles:1,
-                maxFilesize:30,
-                previewTemplate: previewTemplate,
-                previewsContainer: "#previews",
-                clickable: "#upload-label"
-            });
-
-            zdrop.on("addedfile", function(file) {
-                $('.preview-container').css('visibility', 'visible');
-            });
-
-            zdrop.on("totaluploadprogress", function (progress) {
-                var progr = document.querySelector(".progress .determinate");
-                if (progr === undefined || progr === null)
-                    return;
-
-                progr.style.width = progress + "%";
-            });
-
-            zdrop.on('dragenter', function () {
-                $('.fileuploader').addClass("active");
-            });
-
-            zdrop.on('dragleave', function () {
-                $('.fileuploader').removeClass("active");
-            });
-
-            zdrop.on('drop', function () {
-                $('.fileuploader').removeClass("active");
-            });
-
-        }
-
-    });
-</script>
-<!--Dropzone script end-->
 </body>
 </html>

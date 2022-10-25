@@ -10,6 +10,7 @@
 <link type="text/css" rel="stylesheet" href="assets/css/style.css">
 <link type="text/css" rel="stylesheet" href="assets/css/sidebar.css">
 <link type="text/css" rel="stylesheet" href="assets/css/navbar.css">
+<link type="text/css" rel="stylesheet" href="assets/css/footer.css">
 <link type="text/css" rel="stylesheet" href="assets/css/card.css">
 <link type="text/css" rel="stylesheet" href="assets/css/dropzone2.css">
 

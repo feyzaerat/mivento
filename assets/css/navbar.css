@@ -42,7 +42,8 @@ a {
     align-items: center;
     justify-content: space-between;
     padding: 0 1rem;
-    background-color: var(--white-color)!important;
+   /* background-color: var(--white-color)!important;*/
+    background-color: transparent!important;
     z-index: var(--z-fixed);
     transition: 0.5s;
 }
@@ -186,5 +187,13 @@ nav i{
 
     .body-pd {
         padding-left: calc(var(--nav-width) + 188px);
+    }
+}
+@media only screen and (max-width: 576px) {
+    .nav_name{
+        display: none;
+    }
+    .nav_logo-name{
+        display: none;
     }
 }
