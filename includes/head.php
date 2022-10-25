@@ -11,4 +11,4 @@
 <link type="text/css" rel="stylesheet" href="https://demo.feyzaerat.com/appointment/assets/css/navbar.css">
 <link type="text/css" rel="stylesheet" href="https://demo.feyzaerat.com/appointment/assets/css/card.css">
 
-<title>Appointment</title>
+<title>Mivento</title>
