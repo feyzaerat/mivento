@@ -31,7 +31,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-This web application was developed for importing a CSV file to MySQL Database.
+This web application is developed for importing a CSV file to MySQL Database.
 
 [![](https://demo.feyzaerat.com/mivento/mivento_home.jpg)](https://demo.feyzaerat.com/mivento/mivento_home.jpg)
 
@@ -45,7 +45,7 @@ This web application was developed for importing a CSV file to MySQL Database.
 
 This web application is built with PHP 7.4, Bootstrap 5.2 and jQuery.
 
-[![Bootstrap][Bootstrap.com]][Bootstrap-url][![JQuery][JQuery.com]][JQuery-url]![PHP](https://img.shields.io/badge/php-%23777BB4.svg?style=for-the-badge&logo=php&logoColor=white)![PhpStorm](https://img.shields.io/badge/phpstorm-143?style=for-the-badge&logo=phpstorm&logoColor=black&color=black&labelColor=darkorchid)![Google](https://img.shields.io/badge/google-4285F4?style=for-the-badge&logo=google&logoColor=white)![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
+[![Bootstrap][Bootstrap.com]][Bootstrap-url][![JQuery][JQuery.com]][JQuery-url]![PHP](https://img.shields.io/badge/php-%23777BB4.svg?style=for-the-badge&logo=php&logoColor=white)![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
 
 
 
@@ -69,7 +69,7 @@ _Below is an example of how you can instruct your audience on installing and set
 
 3. CSV File Example (Please update your file as in the picture so that only the gray areas remain.)
 
-[![](https://demo.feyzaerat.com/mivento/mivento_home.jpg)](https://demo.feyzaerat.com/mivento/mivento_home.jpg)
+[![](https://demo.feyzaerat.com/mivento/csv.jpg)](https://demo.feyzaerat.com/mivento/csv.jpg)
 
 <!-- LICENSE -->
 ## License
