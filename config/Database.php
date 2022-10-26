@@ -8,7 +8,9 @@ class Database extends PDO
 
     function __construct()
     {
-        parent::__construct('mysql:host=https://77.245.159.97;dbname=feyzaer1_mivento', 'feyzaer1_mivento', '&qXVrO7.8tmh');
+        parent::__construct();
+
+
 
         $this->alert = new Alert();
     }
