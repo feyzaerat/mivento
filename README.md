@@ -33,13 +33,13 @@
 
 This web application was developed for importing a CSV file to MySQL Database.
 
-[![](C:\Users\FeyzaKaranfilErat\PhpstormProjects\mivento\mivento_home.jpg)](https://demo.feyzaerat.com/mivento/mivento_home.jpg)
+[![](https://demo.feyzaerat.com/mivento/mivento_home.jpg)](https://demo.feyzaerat.com/mivento/mivento_home.jpg)
 
 
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+### Demo Page
 
-
+[Demo]
 
 ### Built With
 
@@ -65,15 +65,11 @@ _Below is an example of how you can instruct your audience on installing and set
    ```
 2. Confiugure Database  (Your table should be created like that below.)
 
-[![](C:\Users\FeyzaKaranfilErat\PhpstormProjects\mivento\db_table.jpg)](https://demo.feyzaerat.com/mivento/mivento_home.jpg)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+[![](https://demo.feyzaerat.com/mivento/db_table.jpg)](https://demo.feyzaerat.com/mivento/mivento_home.jpg)
 
 3. CSV File Example (Please update your file as in the picture so that only the gray areas remain.)
 
-[![](C:\Users\FeyzaKaranfilErat\PhpstormProjects\mivento\csv.jpg)](https://demo.feyzaerat.com/mivento/mivento_home.jpg)
-
-
+[![](https://demo.feyzaerat.com/mivento/mivento_home.jpg)](https://demo.feyzaerat.com/mivento/mivento_home.jpg)
 
 <!-- LICENSE -->
 ## License
@@ -89,10 +85,6 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 Feyza Karanfil Erat - [sendMail](mailto:contact@feyzaerat.com) - contact@feyzaerat.com
 
 Project Link: [https://github.com/feyzaerat/mivento](https://github.com/feyzaerat/mivento)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
@@ -115,3 +107,4 @@ Project Link: [https://github.com/feyzaerat/mivento](https://github.com/feyzaera
 [Bootstrap-url]: https://getbootstrap.com
 [JQuery.com]: https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white
 [JQuery-url]: https://jquery.com 
+[Demo]: https://demo.feyzaerat.com/mivento 
