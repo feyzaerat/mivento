@@ -56,26 +56,6 @@ h5{
     filter:drop-shadow(2px -9px 4px rgba(0, 69, 134, 0.4));
 }
 
-.second-card-icons, .fa-solid{
-    position:absolute;
-    top: 18rem;
-    right: 2rem;
-    color:white;
-    font-size:3rem;
-    background: rgb(238,174,202);
-    background: linear-gradient(133deg, rgba(255,255,255,1) 0%, rgba(211,210,231,1) 19%, rgba(11,39,73,1) 100%);
-    padding: 1rem;
-    border-radius: 100%;
-    transition: all .6s ease-in-out;
-}
-
-.card:hover .second-card-icons{
-    transform: rotate(-180deg);
-}
-
-.second-card-icons:hover{
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.7) 0px 18px 36px -18px inset;
-}
 .upload-card {
     width: 80rem!important;
     /* height: 11.5rem!important; */

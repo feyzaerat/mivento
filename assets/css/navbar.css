@@ -1,5 +1,3 @@
-/* SOURCE: https://bbbootstrap.com/snippets/bootstrap-5-sidebar-menu-toggle-button-34132202 */
-
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap");
 
 :root {
@@ -42,7 +40,6 @@ a {
     align-items: center;
     justify-content: space-between;
     padding: 0 1rem;
-   /* background-color: var(--white-color)!important;*/
     background-color: transparent!important;
     z-index: var(--z-fixed);
     transition: 0.5s;
