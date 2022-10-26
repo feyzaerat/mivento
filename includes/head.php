@@ -15,5 +15,4 @@
 <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.css">
 <link type="text/css" rel="stylesheet" href="assets/css/dataTable.css">
 
-
 <title>Mivento</title>
